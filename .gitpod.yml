@@ -1,0 +1,7 @@
+ports:
+  - port: 1337
+    onOpen: ignore
+
+tasks:
+  - command: python3 -m http.server 1337
+  - command: gp await-port 1337 && gp preview $(gp url 1337)/index.html

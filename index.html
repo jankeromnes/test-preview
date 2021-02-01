@@ -1,0 +1,9 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Oops</title>
+
+<pre id="pre"></pre>
+
+<script>
+  document.querySelector('#pre').textContent = document.cookie.split(';').map(c => c.trim()).join('\n\n');
+</script>
